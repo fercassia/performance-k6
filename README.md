@@ -1,5 +1,5 @@
 ## performance-k6:
-Teste de performance de API Chuck Norris, objetivo de estudar performance utilizando a ferramente k6 integrado com a base de dados influxDB, Grafana e Docker.
+Teste de performance de API disponibilizada pelo K6, objetivo de estudar performance utilizando a ferramente k6 integrado com a base de dados influxDB, Grafana e Docker.
 
 ### Pré-condições:
 1. Deve ter instalado em sua maquina k6, se não tiver rode o comando `brew install k6`;
@@ -7,7 +7,7 @@ Teste de performance de API Chuck Norris, objetivo de estudar performance utiliz
 3. Tenha instalado em sua maquina visual studio code, node se necessário (afinal de contas k6 usa JS);
 
 ### Configuração do ambiente:
-1. Na parta Docker (path: performance-k6/clientes-performance/Docker) rode o comando para iniciar o docker-compose: `docker-compose up`
+1. Na parta Docker (path: performance-k6/src/Docker) rode o comando para iniciar o docker-compose: `docker-compose up`
 2. Execute o comando para pegar o id do influx: `docker ps`;
 3. Execute o comando para iniciar o container da base de dados: `docker exec -it {{idContainerInflux}} influx`;
 4. Entre no link do grafana pela porta que o container iniciou: `localhost:3000`;
